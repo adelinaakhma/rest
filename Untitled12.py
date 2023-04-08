@@ -1,46 +1,53 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[5]:
 
 
-a=int(input())
-if (a>=1 and a<=2):
-    print("Зима")
-elif (a>=3 and a<=5):
-    print("Весна")
-elif (a>=6 and a<=8):
-    print("Лето")
-elif (a>=9 and a<=11):
-    print("Осень")    
-elif (a==12):
-    print("Зима")
-else:
-    print("Введен неправильный месяц")
+print ('Хай')
+a = int (input('Введите первое число: '))
+b = int (input('Введите второе число: '))
+
+v = int (input('Какую операцию Вы хотите выполнить? /n 1 Сложение и Вычитание /n 2 Умножение и Деление /n 3 Процент и Деление с остатком'))
+
+if v==1:
+    a = int (input('Введите первое число: '))
+    b = int (input('Введите второе число: '))
+    
+    a=int(input())
+    b=int(input())
+    
+    print(a + b)
+    print(a - b)
+
+if v==2:
+    a = int (input('Введите первое число: '))
+    b = int (input('Введите второе число: '))
+    
+    a=int(input())
+    b=int(input())
+    
+    print(a * b)
+    print(a / b)
+    
+if v==3:
+    a = int (input('Введите первое число: '))
+    b = int (input('Введите второе число: '))
+    
+    a=int(input())
+    b=int(input())
+    
+    print(a % b)
+    print(a // b)
+input()
 
 
-# In[ ]:
-
-
-health=int(input())
-if health <=0:
-    print("Нет здоровья")
-else:
-    print("Есть здоровья")
-
-
-# In[4]:
-
-
-a=int(input())
-b=int(input())
-c=int(input())
-d=((a+2)/(b+5))**4-0.001*c
-print(d)
-
-
-# In[ ]:
-
-
-
-
+# 
+# b=int(input())
+# 
+# print(a + b)
+# print(a - b)
+# print(a * b)
+# print(a / b)
+# print(a % b)
+# print(a // b)
